@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Daily Tasks</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NEW-->
+    <nav class="navbar">
+
+        <div>
+            <button id="darkModeToggle">🌙 Dark Mode</button>
+            <!-- <button onclick="logout()" class="logout-btn">Logout</button>-->
+        </div>
+    </nav>
+
+    <!-- LOGIN -->
+    <div id="login-screen" class="login-page">
+        <div class="login-card">
+            <h2>Welcome Back</h2>
+            <p>Login to your workspace</p>
+
+            <input type="email" id="login-email" placeholder="Email">
+            <input type="password" id="login-pass" placeholder="Password">
+
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+
+    <!-- APP -->
+    <div id="app-screen" class="app-page hidden">
+
+        <header class="top-bar">
+            <h2>My Daily Tasks</h2>
+            <button onclick="logout()">Logout</button>
+        </header>
+
+        <div class="dashboard">
+
+            <!-- ADD TASK -->
+            <div class="card">
+                <h3>Add New Task</h3>
+
+                <input type="text" id="task-name" placeholder="Task name">
+
+                <input type="date" id="task-date">
+                <input type="time" id="task-time">
+
+                <select id="reminder-val">
+                <option value="5">5 mins before</option>
+                <option value="10">10 mins before</option>
+                <option value="30">30 mins before</option>
+            </select>
+
+                <button onclick="addTask()">Create Task</button>
+            </div>
+
+            <!-- TASK LIST -->
+            <div class="card">
+                <h3>Pending Tasks</h3>
+                <div id="pending-list"></div>
+
+                <h3 style="margin-top:25px;">Completed Tasks</h3>
+                <div id="completed-list"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

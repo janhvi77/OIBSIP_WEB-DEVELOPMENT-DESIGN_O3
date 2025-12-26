@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    min-height: 100vh;
+}
+
+
+/* LOGIN */
+
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-card {
+    background: white;
+    padding: 30px;
+    width: 350px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+/* APP */
+
+.hidden {
+    display: none;
+}
+
+.app-page {
+    padding: 30px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.top-bar button {
+    background: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+/* DASHBOARD */
+
+.dashboard {
+    background: white;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+}
+
+
+/* CARD */
+
+.card {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card input,
+.card select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.card button {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* TASKS */
+
+.task {
+    background: white;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+
+/*NEW*/
+
+
+/* ===============================
+   DARK MODE
+================================= */
+
+body.dark-mode {
+    background: #1f2937;
+    /* dark background */
+    color: #f3f4f6;
+    /* light text */
+}
+
+body.dark-mode .glass-card,
+body.dark-mode .card,
+body.dark-mode .app-layout {
+    background: #374151;
+    /* darker card background */
+    color: #f3f4f6;
+}
+
+body.dark-mode input,
+body.dark-mode select {
+    background: #4b5563;
+    color: #f3f4f6;
+    border: 1px solid #6b7280;
+}
+
+body.dark-mode .task-card {
+    background: #4b5563;
+    color: #f3f4f6;
+}
+
+body.dark-mode .done-btn {
+    background: #166534;
+    color: #d1fae5;
+}
+
+body.dark-mode .del-btn {
+    background: #7f1d1d;
+    color: #fee2e2;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .top-bar {
+    background: #111827;
+    color: #f3f4f6;
+}
+
+body.dark-mode .main-btn {
+    background: #2563eb;
+    color: white;
+}
